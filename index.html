@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <script src="./js/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/semantic.min.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -20,15 +21,15 @@
                 <div class="card-header"> Please Input the Data :</div>
                 <div class="card-body">
                     <div class="ui input focus">
-                        <input type="text" placeholder="Full Name">
+                        <input id="inpFullName" type="text" placeholder="Full Name">
                     </div>
                     <div class="ui input focus">
-                        <input type="text" placeholder="Age">
+                        <input id="inpAge" type="text" placeholder="Age">
                     </div>
                     <div class="ui input focus">
-                        <input type="text" placeholder="Job">
+                        <input id="inpJob" type="text" placeholder="Job">
                     </div>
-                    <button class="ui primary button">
+                    <button id="btnSave" class="ui primary button">
                         Save
                     </button>
                 </div>
@@ -36,18 +37,20 @@
                     <table class="ui celled table">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>Name</th>
                                 <th>Age</th>
                                 <th>Job</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody id="TableView">
+                            <!-- <tr>
+                                <td data-label="ID">ID</td>
                                 <td data-label="Name">James</td>
                                 <td data-label="Age">24</td>
                                 <td data-label="Job">Engineer</td>
-                            </tr>
-                            <tr>
+                            </tr> -->
+                            <!-- <tr>
                                 <td data-label="Name">Jill</td>
                                 <td data-label="Age">26</td>
                                 <td data-label="Job">Engineer</td>
@@ -56,7 +59,7 @@
                                 <td data-label="Name">Elyse</td>
                                 <td data-label="Age">24</td>
                                 <td data-label="Job">Designer</td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -67,7 +70,7 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery-3.3.1.js"></script>
+    <!-- <script src="./js/jquery-3.3.1.js"></script> -->
     <script src="./js/popper.min.js"></script>
     <script src="./js/semantic.min.js"></script>
 </body>
